@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page - MyStore</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="container">
+    <h1>MyStore</h1>
+    <button class="cart-button" onclick="toggleCart()">🛒 Cart (<span id="cart-count">0</span>)</button>
+  </header>
+  <main class="container">
+    <div class="product-page">
+      <div class="product-images">
+        <img src="https://via.placeholder.com/500x400" alt="Product">
+      </div>
+      <div class="product-info">
+        <h2>New Balance MCY996v3</h2>
+        <p class="price">$119.95 <span class="old-price">$129.95</span></p>
+        <p>Ships Free!</p>
+        <label for="size">Size:</label>
+        <select id="size">
+          <option>14</option>
+          <option>13</option>
+          <option>12</option>
+        </select>
+        <label for="width">Width:</label>
+        <select id="width">
+          <option>EE - Wide</option>
+          <option>D - Standard</option>
+        </select>
+        <p class="stock">ONLY 1 IN STOCK</p>
+        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+        <div class="description">
+          <h3>Item Information</h3>
+          <ul>
+            <li>View the size chart</li>
+            <li>Bring nothing but your best to the court and dominate with this tennis shoe!</li>
+          </ul>
+        </div>
+        <div class="social-share">
+          <p>Share:</p>
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Email</a>
+        </div>
+      </div>
+    </div>
+    <div class="cart-popup" id="cart-popup">
+      <h3>Your Cart</h3>
+      <div id="cart-items"></div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
